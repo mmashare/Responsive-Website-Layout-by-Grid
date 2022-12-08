@@ -1,0 +1,105 @@
+.cantainer{
+    display:grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:"nav nav nav nav"
+                        "main main main main"
+                        " content1 content2 content3 content4"
+                          "footer footer footer footer";
+    grid-gap:0.2rem;
+    font-weight:800;
+    font-size:12px;
+    color:red;
+    text-align:center;
+  }
+  .nav{
+    background-color:black;
+    grid-area:nav;
+  }
+  
+  .miancon{
+    background-color:blue;
+    grid-area:main;
+  }
+  
+  
+  
+  .content1{
+     background-color:green;
+    grid-area:content1;
+  }
+  
+  .content2{
+    background-color:yellow;
+    grid-area:content2;
+  }
+  
+  .content3{
+    background-color:green;
+    grid-area:content3;
+  }
+  .content4{
+    background-color:green;
+    grid-area:content4;
+  }
+  .footerr{
+    color:black;
+    background-color:red;
+    grid-area:footer;
+  }
+  
+                                                              /* for under 700px width screen */
+
+
+
+  @media (max-width: 700px) {
+    .cantainer{
+        display:grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:0.4fr 0.4fr 2.2fr 1.2fr 1.2fr ;
+        grid-template-areas:"nav nav"
+                            "main main"
+                            "content1 content2"
+                            "content3 content4"
+                              "footer footer";
+        grid-gap:0.2rem;
+        font-weight:800;
+        font-size:12px;
+        color:red;
+        text-align:center;
+      }
+  }
+
+
+
+                                                          /* for under 300px width screen */
+
+
+
+
+
+  @media (max-width: 300px) {
+    .cantainer{
+        display:grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns:1fr;
+        grid-template-rows:0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-areas:"nav"
+                            "main"
+                            "content1" 
+                            "content2"
+                            "content3"
+                            "content4"
+                            "footer";
+        grid-gap:0.2rem;
+        font-weight:800;
+        font-size:12px;
+        color:red;
+        text-align:center;
+      }
+  }
